@@ -10,10 +10,6 @@ tabs.addEventListener("click", function (e) {
 function filterSearch(target) {
   images.forEach((elem, index) => {
     elem.classList.remove("none");
-    // if(target !== elem.dataset.category){
-    //     elem.classList.add('none')
-    // }
-
     if (elem.dataset.category === target || target === "all") {
       elem.style.display = "block";
     } else {
